@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  scroll-margin-top: 88px;
+}
+
+nav[data-sections] {
+  display: flex;
+}
+
+button[data-burger] {
+  display: none;
+}
+
+div[data-motor-cards] {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  nav[data-sections] {
+    display: none;
+  }
+  button[data-burger] {
+    display: inline-flex;
+  }
+}
+
+@media (max-width: 720px) {
+  div[data-motor-table] {
+    display: none;
+  }
+  div[data-motor-cards] {
+    display: grid;
+  }
+}
+
+body {
+  margin: 0;
+  background: #f6f2ec;
+  overflow-x: hidden;
+  color: #22292b;
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #1f4e4e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d9a75c;
+}
+
+summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] span[data-chev] {
+  transform: rotate(45deg);
+}
+
+details[open] summary {
+  color: #1f4e4e;
+}
+
+.nav-link:hover {
+  color: #d9a75c !important;
+}
+
+.nav-link-mobile:hover {
+  color: #d9a75c !important;
+}
+
+.btn-gold:hover {
+  background: #ffffff !important;
+  color: #1f4e4e !important;
+}
+
+.btn-teal:hover {
+  background: #22292b !important;
+}
+
+.card-link:hover {
+  border-color: #1f4e4e !important;
+}
+
+.mantenimiento-banner:hover {
+  background: #1a4444 !important;
+}

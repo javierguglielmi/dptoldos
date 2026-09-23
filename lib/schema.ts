@@ -10,28 +10,31 @@ export function localBusinessSchema() {
     url: SITE_URL,
     image: `${SITE_URL}/og.jpg`,
     telephone: WHATSAPP_NUMBER,
-    priceRange: "$$",
     areaServed: MUNICIPIOS.map((m) => ({
       "@type": "City",
       name: m,
     })),
-    address: {
-      "@type": "PostalAddress",
-      addressRegion: "Baix Llobregat",
-      addressLocality: "Barcelona",
-      addressCountry: "ES",
-    },
-    makesOffer: ORDEN.map((slug) => {
-      const f = FICHAS[slug];
-      return {
+    makesOffer: [
+      ...ORDEN.map((slug) => {
+        const f = FICHAS[slug];
+        return {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: f.h1,
+            url: `${SITE_URL}/toldos/${slug}`,
+          },
+        };
+      }),
+      {
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
-          name: f.h1,
-          url: `${SITE_URL}/toldos/${slug}`,
+          name: "Mantenimiento de toldos en el Baix Llobregat",
+          url: `${SITE_URL}/toldos/mantenimiento`,
         },
-      };
-    }),
+      },
+    ],
   };
 }
 

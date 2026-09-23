@@ -7,7 +7,7 @@ import JsonLd from "@/components/JsonLd";
 import { FICHAS, ORDEN, RESUMEN } from "@/lib/fichas";
 import { HOME_FAQS, MOTOR_ROWS, PASOS } from "@/lib/home-data";
 import { CTA_LABEL, FONT_SERIF, MUNICIPIOS, SITE_URL, WHATSAPP_NUMBER, waLink } from "@/lib/site";
-import { localBusinessSchema } from "@/lib/schema";
+import { faqPageSchema, localBusinessSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
   title: "DP Toldos · Toldos a medida en el Baix Llobregat",
@@ -52,6 +52,7 @@ export default function HomePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#F6F2EC" }}>
       <JsonLd data={localBusinessSchema()} />
+      <JsonLd data={faqPageSchema(HOME_FAQS)} />
       <Header nav={nav} waLink={wa} />
 
       <section id="top" style={{ background: "#1F4E4E", color: "#FFFFFF" }}>

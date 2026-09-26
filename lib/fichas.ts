@@ -9,8 +9,8 @@ export type Ficha = {
   foto: string;
   img: string | null;
   imgAlt?: string;
-  medidas: string;
-  medidasPendiente: boolean;
+  medidasTitulo: string;
+  medidasNota?: string;
   motorTitulo: string;
   motorNota: string;
   usoTitulo: string;
@@ -58,8 +58,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/brazo-invisible.webp",
     imgAlt:
       "Toldo de brazo invisible desplegado sobre una terraza, con lona beige y brazos pegados a la lona",
-    medidas: "6 m de línea · 3,75 m de salida",
-    medidasPendiente: false,
+    medidasTitulo: "6 m de línea · 3,75 m de salida",
     motorTitulo: "Sí, se motoriza",
     motorNota:
       "Somfy preferente, con sensores de sol y viento. El sistema más habitual para motorizar.",
@@ -120,8 +119,9 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/brazo-directo.webp",
     imgAlt:
       "Toldo de brazo directo con lona crema desplegado sobre la ventana de una fachada de ladrillo, con el brazo y el mando de manivela a la vista",
-    medidas: "Pendiente de confirmar",
-    medidasPendiente: true,
+    medidasTitulo: "Se confirma en la visita",
+    medidasNota:
+      "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
     motorTitulo: "Sí, se motoriza",
     motorNota:
       "Somfy preferente. Si va motorizado, recomendamos la variante con tensión.",
@@ -179,9 +179,9 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/capota.webp",
     imgAlt:
       "Toldo capota semicircular con lona de rayas azul claro y faldón ondulado sobre la ventana de una fachada",
-    medidas:
+    medidasTitulo: "Se confirma en la visita",
+    medidasNota:
       "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
-    medidasPendiente: false,
     motorTitulo: "No se motoriza",
     motorNota: "Su propio mecanismo es fijo: no admite motor ni sensor.",
     usoTitulo: "Ventanas y escaparates",
@@ -199,10 +199,6 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       {
         t: "Dónde tiene sentido",
         d: "Ventanas y escaparates de negocio, donde importa proteger el hueco y dar identidad a la fachada.",
-      },
-      {
-        t: "Medidas",
-        d: "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
       },
     ],
     faqs: [
@@ -238,9 +234,9 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/vertical.webp",
     imgAlt:
       "Toldos verticales con tejido técnico gris bajados entre los pilares de una pérgola junto a una piscina",
-    medidas:
+    medidasTitulo: "Se confirma en la visita",
+    medidasNota:
       "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
-    medidasPendiente: false,
     motorTitulo: "No se motoriza",
     motorNota: "Su mecanismo no acepta motor: el accionamiento es siempre manual.",
     usoTitulo: "Sol bajo de tarde",
@@ -254,10 +250,6 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       {
         t: "Cuándo elegirlo",
         d: "Para sol de tarde o lateral. Es un uso distinto al de un toldo de brazo, que cubre el sol que viene desde arriba.",
-      },
-      {
-        t: "Medidas",
-        d: "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
       },
     ],
     faqs: [
@@ -289,9 +281,9 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/corredero.webp",
     imgAlt:
       "Toldo corredero de lona color arena sobre guías, cubriendo una terraza con tumbona y mesa",
-    medidas:
-      "Se fabrica a medida según el espacio — no hay un límite estándar, lo definimos en la visita de medición.",
-    medidasPendiente: false,
+    medidasTitulo: "A medida, sin límite fijo",
+    medidasNota:
+      "Se fabrica según el espacio real de tu patio o terraza — lo definimos en la visita de medición.",
     motorTitulo: "Caso por caso",
     motorNota:
       "Motorizarlo es difícil: lo evaluamos en la visita y no lo ofrecemos como estándar.",
@@ -310,10 +302,6 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       {
         t: "Verandas",
         d: "Las instalaciones tipo veranda se resuelven con este sistema: no es un tipo de toldo aparte.",
-      },
-      {
-        t: "Medidas",
-        d: "Se fabrica a medida según el espacio — no hay un límite estándar, lo definimos en la visita de medición.",
       },
     ],
     faqs: [

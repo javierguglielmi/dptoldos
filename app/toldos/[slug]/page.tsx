@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import CtaButton from "@/components/CtaButton";
 import FaqAccordion from "@/components/FaqAccordion";
 import JsonLd from "@/components/JsonLd";
+import PlaceEmphasis from "@/components/PlaceEmphasis";
 import { FICHAS, ORDEN, RESUMEN, type FichaSlug, COMUNES } from "@/lib/fichas";
 import { CTA_LABEL, FONT_SERIF, SITE_URL, WHATSAPP_NUMBER, waLink } from "@/lib/site";
 import { faqPageSchema, fichaServiceSchema } from "@/lib/schema";
@@ -85,7 +86,7 @@ export default async function FichaPage({ params }: { params: Promise<{ slug: st
                 Ficha técnica · {ficha.nombre}
               </p>
               <h1 style={{ margin: "0 0 24px", fontFamily: FONT_SERIF, fontWeight: 500, fontSize: "clamp(34px,4.8vw,56px)", lineHeight: 1.06, letterSpacing: "-.02em" }}>
-                {ficha.h1}
+                <PlaceEmphasis text={ficha.h1} />
               </h1>
               <p style={{ margin: "0 0 36px", fontSize: "clamp(17px,1.4vw,19px)", lineHeight: 1.6, maxWidth: "54ch", color: "#FFFFFF" }}>
                 {ficha.apertura}
@@ -131,11 +132,9 @@ export default async function FichaPage({ params }: { params: Promise<{ slug: st
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(min(260px,100%),1fr))", gap: 20, marginBottom: 28 }}>
           <div style={{ background: "#FFFFFF", border: "1px solid #22292B1f", padding: "22px 22px 24px", display: "flex", flexDirection: "column", gap: 8 }}>
             <p style={{ margin: 0, fontSize: 12, letterSpacing: ".14em", textTransform: "uppercase", fontWeight: 700, color: "#1F4E4E" }}>Medidas máximas</p>
-            <p style={{ margin: 0, fontFamily: FONT_SERIF, fontSize: 26, lineHeight: 1.2, color: "#22292B" }}>{ficha.medidas}</p>
-            {ficha.medidasPendiente && (
-              <p style={{ margin: "2px 0 0", fontSize: 13, lineHeight: 1.5, color: "#22292B", opacity: 0.7, borderTop: "1px dashed #1F4E4E59", paddingTop: 8 }}>
-                Dato pendiente de confirmar con el instalador. No publicamos un rango que no podamos sostener.
-              </p>
+            <p style={{ margin: 0, fontFamily: FONT_SERIF, fontSize: 26, lineHeight: 1.2, color: "#22292B" }}>{ficha.medidasTitulo}</p>
+            {ficha.medidasNota && (
+              <p style={{ margin: "2px 0 0", fontSize: 14, lineHeight: 1.55, color: "#22292B", opacity: 0.8 }}>{ficha.medidasNota}</p>
             )}
           </div>
           <div style={{ background: "#FFFFFF", border: "1px solid #22292B1f", padding: "22px 22px 24px", display: "flex", flexDirection: "column", gap: 8 }}>

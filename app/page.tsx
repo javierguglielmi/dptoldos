@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import CtaButton from "@/components/CtaButton";
 import FaqAccordion from "@/components/FaqAccordion";
 import JsonLd from "@/components/JsonLd";
-import PlaceEmphasis from "@/components/PlaceEmphasis";
 import { FICHAS, ORDEN, RESUMEN } from "@/lib/fichas";
 import { HOME_FAQS, MOTOR_ROWS, PASOS } from "@/lib/home-data";
 import { CTA_LABEL, FONT_SERIF, MUNICIPIOS, SITE_URL, WHATSAPP_NUMBER, waLink } from "@/lib/site";
@@ -70,7 +69,7 @@ export default function HomePage() {
         >
           <div>
             <p style={{ margin: "0 0 20px", fontSize: 13, letterSpacing: ".16em", textTransform: "uppercase", color: "#D9A75C", fontWeight: 600 }}>
-              Baix Llobregat · Instalador propio, sin subcontratas
+              Baix Llobregat y alrededores · Instalador propio, sin subcontratas
             </p>
             <h1
               style={{
@@ -82,7 +81,7 @@ export default function HomePage() {
                 letterSpacing: "-.02em",
               }}
             >
-              <PlaceEmphasis text="Instalamos toldos a medida en el Baix Llobregat" />
+              Instalamos toldos a medida en el Baix Llobregat y alrededores
             </h1>
             <p style={{ margin: "0 0 36px", fontSize: "clamp(17px,1.4vw,19px)", lineHeight: 1.6, maxWidth: "52ch", color: "#FFFFFF" }}>
               Brazo invisible, brazo directo, capota, vertical y corredero. Medimos en tu casa, instalamos en pocos

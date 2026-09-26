@@ -5,7 +5,6 @@ import Footer from "@/components/Footer";
 import CtaButton from "@/components/CtaButton";
 import FaqAccordion from "@/components/FaqAccordion";
 import JsonLd from "@/components/JsonLd";
-import PlaceEmphasis from "@/components/PlaceEmphasis";
 import { FICHAS, ORDEN, RESUMEN, type FichaSlug, COMUNES } from "@/lib/fichas";
 import { CTA_LABEL, FONT_SERIF, SITE_URL, WHATSAPP_NUMBER, waLink } from "@/lib/site";
 import { faqPageSchema, fichaServiceSchema } from "@/lib/schema";
@@ -86,7 +85,7 @@ export default async function FichaPage({ params }: { params: Promise<{ slug: st
                 Ficha técnica · {ficha.nombre}
               </p>
               <h1 style={{ margin: "0 0 24px", fontFamily: FONT_SERIF, fontWeight: 500, fontSize: "clamp(34px,4.8vw,56px)", lineHeight: 1.06, letterSpacing: "-.02em" }}>
-                <PlaceEmphasis text={ficha.h1} />
+                {ficha.h1}
               </h1>
               <p style={{ margin: "0 0 36px", fontSize: "clamp(17px,1.4vw,19px)", lineHeight: 1.6, maxWidth: "54ch", color: "#FFFFFF" }}>
                 {ficha.apertura}

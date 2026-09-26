@@ -51,7 +51,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
   "brazo-invisible": {
     slug: "brazo-invisible",
     nombre: "Brazo invisible",
-    h1: "Toldo de brazo invisible en el Baix Llobregat",
+    h1: "Toldo de brazo invisible en el Baix Llobregat y alrededores",
     apertura:
       "El toldo de brazo invisible, también llamado brazo extensible, usa un brazo articulado con tensión interna de cable o cinta tipo kevlar que queda oculto pegado a la lona cuando el toldo está desplegado. Da más proyección y una línea más limpia que un brazo directo. DP Toldos lo instala a medida en el Baix Llobregat.",
     foto: "Toldo de brazo invisible desplegado en terraza, visto desde abajo: la lona limpia, sin brazo a la vista. Instalación propia.",
@@ -112,7 +112,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
   "brazo-directo": {
     slug: "brazo-directo",
     nombre: "Brazo directo",
-    h1: "Toldo de brazo directo en el Baix Llobregat",
+    h1: "Toldo de brazo directo en el Baix Llobregat y alrededores",
     apertura:
       "El toldo de brazo directo va anclado a la pared o a una barra de carga y, con el toldo desplegado, el brazo y el codo quedan visibles por debajo. Es el sistema más simple y económico. Existe en variante sin tensión, semi-tensión y con tensión, según cuánto viento y cuánta proyección necesite el espacio.",
     foto: "Toldo de brazo directo en balcón, desplegado: se ven el brazo y el codo por debajo de la lona. Instalación propia.",
@@ -167,12 +167,12 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     ctaTitulo: "Pide precio para tu brazo directo",
     metaTitle: "Toldo de brazo directo en el Baix Llobregat · DP Toldos",
     metaDescription:
-      "Toldo de brazo directo a medida, en variante sin tensión, semi-tensión y con tensión. Motorizable. Instalación propia en el Baix Llobregat.",
+      "Toldo de brazo directo a medida, en variante sin tensión, semi-tensión y con tensión. Motorizable. Instalación propia en el Baix Llobregat y alrededores.",
   },
   capota: {
     slug: "capota",
     nombre: "Capota",
-    h1: "Toldo capota en el Baix Llobregat",
+    h1: "Toldo capota en el Baix Llobregat y alrededores",
     apertura:
       "El toldo capota es una estructura fija semicircular, sin brazos articulados. Protege el hueco de una ventana o de un escaparate y marca la fachada con un aire más decorativo y tradicional que los sistemas de brazo. DP Toldos lo instala a medida en el Baix Llobregat.",
     foto: "Capota semicircular sobre escaparate o ventana, vista frontal de fachada. Instalación propia.",
@@ -222,12 +222,12 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     ctaTitulo: "Pide precio para tu capota",
     metaTitle: "Toldo capota en el Baix Llobregat · DP Toldos",
     metaDescription:
-      "Toldo capota a medida: estructura fija semicircular para ventanas y escaparates. Instalación propia en el Baix Llobregat.",
+      "Toldo capota a medida: estructura fija semicircular para ventanas y escaparates. Instalación propia en el Baix Llobregat y alrededores.",
   },
   vertical: {
     slug: "vertical",
     nombre: "Vertical",
-    h1: "Toldo vertical en el Baix Llobregat",
+    h1: "Toldo vertical en el Baix Llobregat y alrededores",
     apertura:
       "El toldo vertical baja la lona en caída recta: es la solución para cortar el sol bajo de la tarde en terrazas y balcones. DP Toldos lo instala a medida en el Baix Llobregat.",
     foto: "Toldo vertical bajado en una terraza a última hora de la tarde, con el sol lateral de frente. Instalación propia.",
@@ -269,12 +269,12 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     ctaTitulo: "Pide precio para tu toldo vertical",
     metaTitle: "Toldo vertical en el Baix Llobregat · DP Toldos",
     metaDescription:
-      "Toldo vertical a medida, con caída recta para cortar el sol bajo de la tarde. Instalación propia en el Baix Llobregat.",
+      "Toldo vertical a medida, con caída recta para cortar el sol bajo de la tarde. Instalación propia en el Baix Llobregat y alrededores.",
   },
   corredero: {
     slug: "corredero",
     nombre: "Corredero",
-    h1: "Toldo corredero en el Baix Llobregat",
+    h1: "Toldo corredero en el Baix Llobregat y alrededores",
     apertura:
       "El toldo corredero desplaza la lona sobre guías, así que se abre y se cierra a demanda: es la solución para patios, interiores de manzana y espacios tipo veranda. DP Toldos lo instala a medida en el Baix Llobregat, con o sin ondas decorativas según el acabado que busques.",
     foto: "Toldo corredero sobre un patio interior de manzana, media lona recogida y ondas marcadas. Instalación propia.",
@@ -325,7 +325,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     ctaTitulo: "Pide precio para tu toldo corredero",
     metaTitle: "Toldo corredero en el Baix Llobregat · DP Toldos",
     metaDescription:
-      "Toldo corredero a medida sobre guías, para patios, interiores de manzana y verandas. Instalación propia en el Baix Llobregat.",
+      "Toldo corredero a medida sobre guías, para patios, interiores de manzana y verandas. Instalación propia en el Baix Llobregat y alrededores.",
   },
 };
 

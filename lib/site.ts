@@ -27,4 +27,4 @@ export const MUNICIPIOS = [
 ];
 
 export const ZONA_RESUMEN =
-  "Baix Llobregat: Sant Just Desvern, Esplugues, Sant Joan Despí, Castelldefels, Gavà, Begues, Sant Feliu, Molins de Rei, Viladecans y alrededores.";
+  "Baix Llobregat y alrededores: Sant Just Desvern, Esplugues, Sant Joan Despí, Castelldefels, Gavà, Begues, Sant Feliu, Molins de Rei, Viladecans.";

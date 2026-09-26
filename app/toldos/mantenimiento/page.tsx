@@ -153,12 +153,9 @@ export default function MantenimientoPage() {
           </div>
           <div style={{ padding: "26px clamp(20px,3vw,32px)", borderBottom: "1px solid #22292B14", borderRight: "1px solid #22292B14", display: "flex", flexDirection: "column", gap: 10 }}>
             <p style={{ margin: 0, fontSize: 12, letterSpacing: ".14em", textTransform: "uppercase", fontWeight: 700, color: "#1F4E4E" }}>Qué incluye una visita</p>
-            <span style={{ alignSelf: "flex-start", padding: "5px 10px", fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", fontWeight: 700, color: "#1F4E4E", border: "1px dashed #1F4E4E59" }}>
-              Pendiente de confirmar
-            </span>
             <p style={{ margin: 0, fontSize: 16, lineHeight: 1.6, color: "#22292B", opacity: 0.85 }}>
-              Falta cerrar el detalle técnico de las tareas de una visita tipo. Preferimos dejarlo pendiente antes
-              que publicar una lista que no podamos sostener en cada caso.
+              Evaluamos el estado del toldo en la visita y te decimos qué hace falta, desde un ajuste simple hasta
+              el cambio de lona.
             </p>
           </div>
           <div style={{ padding: "26px clamp(20px,3vw,32px)", borderBottom: "1px solid #22292B14", borderRight: "1px solid #22292B14", display: "flex", flexDirection: "column", gap: 10 }}>

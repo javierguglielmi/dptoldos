@@ -179,8 +179,9 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/capota.webp",
     imgAlt:
       "Toldo capota semicircular con lona de rayas azul claro y faldón ondulado sobre la ventana de una fachada",
-    medidas: "Pendiente de confirmar",
-    medidasPendiente: true,
+    medidas:
+      "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
+    medidasPendiente: false,
     motorTitulo: "No se motoriza",
     motorNota: "Su propio mecanismo es fijo: no admite motor ni sensor.",
     usoTitulo: "Ventanas y escaparates",
@@ -201,7 +202,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       },
       {
         t: "Medidas",
-        d: "Pendiente de confirmar con el instalador. Preferimos no publicar un rango que no podamos sostener; en la visita te damos el máximo real para tu hueco.",
+        d: "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
       },
     ],
     faqs: [
@@ -219,8 +220,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       },
       {
         q: "¿Qué medidas máximas tiene?",
-        a: "Es un dato que estamos confirmando con el instalador. Te lo decimos en la visita, medido sobre tu hueco real.",
-        pendiente: true,
+        a: "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
       },
     ],
     ctaTitulo: "Pide precio para tu capota",
@@ -233,23 +233,20 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     nombre: "Vertical",
     h1: "Toldo vertical en el Baix Llobregat",
     apertura:
-      "El toldo vertical, en versión estor con anclajes o con guías, baja la lona en caída recta: es la solución para cortar el sol bajo de la tarde en terrazas y balcones. DP Toldos lo instala a medida en el Baix Llobregat, con guías o con cable según lo que permita el espacio.",
+      "El toldo vertical baja la lona en caída recta: es la solución para cortar el sol bajo de la tarde en terrazas y balcones. DP Toldos lo instala a medida en el Baix Llobregat.",
     foto: "Toldo vertical bajado en una terraza a última hora de la tarde, con el sol lateral de frente. Instalación propia.",
     img: "/assets/vertical.webp",
     imgAlt:
       "Toldos verticales con tejido técnico gris bajados entre los pilares de una pérgola junto a una piscina",
-    medidas: "Pendiente de confirmar",
-    medidasPendiente: true,
+    medidas:
+      "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
+    medidasPendiente: false,
     motorTitulo: "No se motoriza",
-    motorNota: "Su propio mecanismo de guías o cable no acepta motor.",
+    motorNota: "Su mecanismo no acepta motor: el accionamiento es siempre manual.",
     usoTitulo: "Sol bajo de tarde",
     usoNota:
       "Cuando el problema entra de lado y un toldo de brazo, que da sombra desde arriba, no lo resuelve.",
     tecnico: [
-      {
-        t: "Dos variantes",
-        d: "Estor con anclajes, o vertical con guías. La elección depende del espacio y de los puntos de fijación disponibles.",
-      },
       {
         t: "Sin motorización",
         d: "No se puede motorizar. El accionamiento es manual.",
@@ -260,7 +257,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       },
       {
         t: "Medidas",
-        d: "Pendiente de confirmar con el instalador. Se resuelve a medida sobre el hueco de tu terraza.",
+        d: "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
       },
     ],
     faqs: [
@@ -273,20 +270,14 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
         a: "Cuando el problema es el sol bajo o lateral de la tarde, no el sol que cae desde arriba.",
       },
       {
-        q: "¿Qué diferencia hay entre estor con anclajes y vertical con guías?",
-        a: "Estamos confirmando con el instalador la diferencia práctica entre las dos variantes. Preferimos no explicarla a medias: en la visita te dice cuál encaja en tu terraza y por qué.",
-        pendiente: true,
-      },
-      {
         q: "¿Qué medidas máximas tiene?",
-        a: "Dato pendiente de confirmar. Se hace a medida según el hueco.",
-        pendiente: true,
+        a: "Las medidas se ajustan al hueco o espacio real de tu instalación — te las confirmamos sin compromiso en la visita de medición.",
       },
     ],
     ctaTitulo: "Pide precio para tu toldo vertical",
     metaTitle: "Toldo vertical en el Baix Llobregat · DP Toldos",
     metaDescription:
-      "Toldo vertical a medida, estor con anclajes o con guías, para cortar el sol bajo de la tarde. Instalación propia en el Baix Llobregat.",
+      "Toldo vertical a medida, con caída recta para cortar el sol bajo de la tarde. Instalación propia en el Baix Llobregat.",
   },
   corredero: {
     slug: "corredero",
@@ -298,8 +289,9 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
     img: "/assets/corredero.webp",
     imgAlt:
       "Toldo corredero de lona color arena sobre guías, cubriendo una terraza con tumbona y mesa",
-    medidas: "A medida según el espacio",
-    medidasPendiente: true,
+    medidas:
+      "Se fabrica a medida según el espacio — no hay un límite estándar, lo definimos en la visita de medición.",
+    medidasPendiente: false,
     motorTitulo: "Caso por caso",
     motorNota:
       "Motorizarlo es difícil: lo evaluamos en la visita y no lo ofrecemos como estándar.",
@@ -321,7 +313,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       },
       {
         t: "Medidas",
-        d: "Se hace a medida según el espacio. El rango máximo está pendiente de confirmar con el instalador.",
+        d: "Se fabrica a medida según el espacio — no hay un límite estándar, lo definimos en la visita de medición.",
       },
     ],
     faqs: [
@@ -339,8 +331,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       },
       {
         q: "¿Qué medidas máximas tiene?",
-        a: "Se hace a medida según el espacio; el rango máximo está pendiente de confirmar con el instalador.",
-        pendiente: true,
+        a: "Se fabrica a medida según el espacio — no hay un límite estándar, lo definimos en la visita de medición.",
       },
     ],
     ctaTitulo: "Pide precio para tu toldo corredero",

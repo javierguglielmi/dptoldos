@@ -77,7 +77,7 @@ export default function MantenimientoPage() {
                 Servicio · Mantenimiento
               </p>
               <h1 style={{ margin: "0 0 24px", fontFamily: FONT_SERIF, fontWeight: 500, fontSize: "clamp(34px,4.8vw,56px)", lineHeight: 1.06, letterSpacing: "-.02em" }}>
-                Mantenimiento de toldos en el Baix Llobregat
+                Mantenimiento de toldos en el Baix Llobregat y alrededores
               </h1>
               <p style={{ margin: "0 0 36px", fontSize: "clamp(17px,1.4vw,19px)", lineHeight: 1.6, maxWidth: "54ch", color: "#FFFFFF" }}>
                 Hacemos mantenimiento integral de toldos, instalados por DP Toldos o por cualquier otro instalador.

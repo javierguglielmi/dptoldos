@@ -44,8 +44,8 @@ export default function Footer({
             style={{ height: 96, width: "auto", display: "block", margin: "-8px 0 12px -6px" }}
           />
           <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, opacity: 0.7, maxWidth: "30ch" }}>
-            Toldos a medida en el Baix Llobregat. Medición, fabricación e instalación con el mismo
-            instalador.
+            Toldos a medida en el Baix Llobregat y alrededores. Medición, fabricación e instalación con el
+            mismo instalador.
           </p>
         </div>
         <div>

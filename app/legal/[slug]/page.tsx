@@ -224,49 +224,81 @@ function Privacidad() {
 function Cookies() {
   return (
     <div>
-      <h2 style={h2Style}>Este sitio no utiliza cookies</h2>
+      <h2 style={h2Style}>Qué son y por qué pedimos tu consentimiento</h2>
       <p style={{ margin: "0 0 14px" }}>
-        DP Toldos no instala cookies propias ni de terceros en el navegador de quien visita esta web. No hay
-        analítica, ni píxeles de seguimiento, ni publicidad, ni botones de redes sociales incrustados.
+        Las cookies son pequeños archivos que un sitio guarda en tu navegador. Usamos algunas para medir visitas y
+        para mostrar anuncios más relevantes, pero ninguna se instala hasta que nos das tu consentimiento en el
+        aviso que aparece al entrar. Si no aceptás, esas cookies no se cargan.
       </p>
       <p style={{ margin: "0 0 32px" }}>
-        Por eso no verá ningún aviso pidiéndole permiso: no hay nada que consentir. El sitio son páginas estáticas
-        que se descargan y se muestran, sin guardar nada en su equipo.
+        No usamos cookies para nada distinto de lo que se explica aquí: no vendemos datos de navegación ni los
+        cruzamos con otras fuentes.
       </p>
 
-      <h2 style={h2Style}>Qué sí ocurre al visitarnos</h2>
-      <p style={{ margin: "0 0 14px" }}>Hay dos conexiones a servicios externos que conviene conocer, aunque no impliquen cookies:</p>
-      <ul style={{ margin: "0 0 14px", paddingLeft: 22 }}>
-        <li style={{ marginBottom: 10 }}>
-          <strong>Tipografías.</strong> Las fuentes del sitio se cargan desde los servidores de Google Fonts. Esa
-          petición transmite su dirección IP y datos técnicos del navegador a Google, necesarios para servir el
-          archivo.
+      <h2 style={h2Style}>Cookies que usamos solo con tu consentimiento</h2>
+      <p style={{ margin: "0 0 14px" }}>
+        Se activan únicamente si pulsás &quot;Aceptar&quot; en el aviso de cookies:
+      </p>
+      <ul style={{ margin: "0 0 32px", paddingLeft: 22 }}>
+        <li style={{ marginBottom: 14 }}>
+          <strong>Google Analytics 4 (Google Ireland Limited).</strong> Mide cuántas personas visitan el sitio, qué
+          páginas ven y desde dónde llegan, de forma agregada. Cookies típicas: <code>_ga</code> (hasta 2 años),{" "}
+          <code>_ga_&lt;id&gt;</code> (hasta 2 años).
+        </li>
+        <li style={{ marginBottom: 14 }}>
+          <strong>Google Ads (Google Ireland Limited).</strong> Mide si alguien que vio o hizo clic en un anuncio
+          nuestro terminó contactándonos por WhatsApp, para saber qué anuncios funcionan. Cookie típica:{" "}
+          <code>_gcl_au</code> (hasta 90 días).
         </li>
         <li>
-          <strong>Alojamiento.</strong> El sitio está alojado en Vercel, que registra los accesos al servidor (IP,
-          fecha, página solicitada) con fines técnicos y de seguridad.
+          <strong>Meta Pixel (Meta Platforms Ireland Limited).</strong> Mide conversiones de campañas en Facebook e
+          Instagram y permite mostrar anuncios nuestros a quienes ya visitaron el sitio. Cookies típicas:{" "}
+          <code>_fbp</code> (hasta 90 días), <code>fr</code> (hasta 90 días).
         </li>
       </ul>
-      <p style={{ margin: "0 0 32px" }}>Ninguna de las dos cosas se usa para identificar a nadie ni para seguir su actividad entre sitios.</p>
-
-      <h2 style={h2Style}>Al pulsar el botón de WhatsApp</h2>
       <p style={{ margin: "0 0 32px" }}>
-        Los botones de contacto abren WhatsApp fuera de este sitio. A partir de ese momento se aplican las
-        condiciones y la política de privacidad de WhatsApp Ireland Limited, que sí utiliza sus propias
-        tecnologías de almacenamiento.
+        Estas tres herramientas se cargan a través de Google Tag Manager (Google Ireland Limited), que solo
+        empieza a funcionar después de que aceptás. Google Tag Manager en sí no instala cookies propias: reenvía
+        el consentimiento a las herramientas anteriores.
       </p>
 
-      <h2 style={h2Style}>Cómo controlar las cookies en general</h2>
+      <h2 style={h2Style}>Cómo retirar el consentimiento</h2>
       <p style={{ margin: "0 0 32px" }}>
-        Aunque aquí no haga falta, cualquier navegador permite ver, bloquear o borrar las cookies almacenadas
-        desde su configuración de privacidad: Chrome, Safari, Firefox y Edge incluyen esa opción en su panel de
-        ajustes.
+        En cualquier momento podés cambiar tu elección desde &quot;Configurar cookies&quot;, en el pie de página de
+        cualquier sección del sitio. Ahí podés volver a aceptar o rechazar; rechazar borra el efecto de las
+        cookies de análisis y publicidad para las próximas visitas.
+      </p>
+
+      <h2 style={h2Style}>Qué ocurre siempre, con o sin consentimiento</h2>
+      <ul style={{ margin: "0 0 32px", paddingLeft: 22 }}>
+        <li style={{ marginBottom: 10 }}>
+          <strong>Tipografías.</strong> Las fuentes del sitio se cargan desde los servidores de Google Fonts. Esa
+          petición transmite tu dirección IP y datos técnicos del navegador a Google, necesarios para servir el
+          archivo. No usa cookies.
+        </li>
+        <li style={{ marginBottom: 10 }}>
+          <strong>Alojamiento y analítica de Vercel.</strong> El sitio está alojado en Vercel, que registra los
+          accesos al servidor (IP, fecha, página solicitada) con fines técnicos y de seguridad, y ofrece una
+          analítica propia sin cookies ni identificadores personales.
+        </li>
+        <li>
+          <strong>Botón de WhatsApp.</strong> Te lleva fuera de este sitio. A partir de ahí se aplican las
+          condiciones y la política de privacidad de WhatsApp Ireland Limited, que sí utiliza sus propias
+          tecnologías de almacenamiento.
+        </li>
+      </ul>
+
+      <h2 style={h2Style}>Cómo controlar las cookies desde tu navegador</h2>
+      <p style={{ margin: "0 0 32px" }}>
+        Además de la opción de esta página, cualquier navegador permite ver, bloquear o borrar las cookies
+        almacenadas desde su configuración de privacidad: Chrome, Safari, Firefox y Edge incluyen esa opción en su
+        panel de ajustes.
       </p>
 
       <h2 style={h2Style}>Si esto cambia</h2>
       <p style={{ margin: "0 0 32px" }}>
-        Si en el futuro añadimos analítica o cualquier herramienta que instale cookies, actualizaremos esta página
-        y mostraremos el aviso de consentimiento correspondiente antes de activarla.
+        Si en el futuro añadimos otra herramienta que instale cookies, actualizaremos esta página y la sumaremos
+        al aviso de consentimiento antes de activarla.
       </p>
     </div>
   );

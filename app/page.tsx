@@ -90,7 +90,7 @@ export default function HomePage() {
               subcontratas por medio.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
-              <CtaButton href={wa} label={CTA_LABEL} />
+              <CtaButton href={wa} label={CTA_LABEL} ctaLocation="home-hero" />
               <span style={{ fontSize: 14, lineHeight: 1.5, color: "#FFFFFF", opacity: 0.85, maxWidth: "26ch" }}>
                 4 preguntas y te damos precio orientativo el mismo día.
               </span>
@@ -435,7 +435,7 @@ export default function HomePage() {
               motorizado.
             </p>
           </div>
-          <CtaButton href={wa} label={CTA_LABEL} variant="teal" />
+          <CtaButton href={wa} label={CTA_LABEL} ctaLocation="home-cierre" variant="teal" />
         </div>
       </section>
 

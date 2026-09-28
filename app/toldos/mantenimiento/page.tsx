@@ -85,7 +85,7 @@ export default function MantenimientoPage() {
                 estado: no es un pack cerrado ni una cuota fija.
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
-                <CtaButton href={wa} label={CTA_LABEL} />
+                <CtaButton href={wa} label={CTA_LABEL} ctaLocation="mantenimiento-hero" />
                 <span style={{ fontSize: 14, lineHeight: 1.5, color: "#FFFFFF", opacity: 0.85, maxWidth: "26ch" }}>
                   Dinos qué toldo tienes y qué le pasa: te decimos si hace falta visita.
                 </span>
@@ -222,7 +222,7 @@ export default function MantenimientoPage() {
               Cuéntanos qué toldo tienes y qué le notas. Con eso te decimos si hace falta visita y qué supondría.
             </p>
           </div>
-          <CtaButton href={wa} label={CTA_LABEL} variant="teal" />
+          <CtaButton href={wa} label={CTA_LABEL} ctaLocation="mantenimiento-cierre" variant="teal" />
         </div>
       </section>
 

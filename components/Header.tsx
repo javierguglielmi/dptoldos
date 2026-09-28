@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import WhatsAppIcon from "./WhatsAppIcon";
+import WhatsAppLink from "./WhatsAppLink";
 
 export type NavLinks = {
   home: string;
@@ -89,8 +90,9 @@ export default function Header({
           </nav>
         </div>
         <nav style={{ flex: "none" }}>
-          <a
+          <WhatsAppLink
             href={waLink}
+            ctaLocation="header"
             className="btn-gold"
             style={{
               display: "inline-flex",
@@ -107,7 +109,7 @@ export default function Header({
           >
             <WhatsAppIcon size={16} />
             WhatsApp
-          </a>
+          </WhatsAppLink>
         </nav>
         <button
           type="button"

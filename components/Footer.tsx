@@ -1,4 +1,6 @@
 import WhatsAppIcon from "./WhatsAppIcon";
+import WhatsAppLink from "./WhatsAppLink";
+import CookieSettingsLink from "./CookieSettingsLink";
 import { ZONA_RESUMEN } from "@/lib/site";
 
 export type FooterTipo = { nombre: string; href: string };
@@ -61,14 +63,15 @@ export default function Footer({
           >
             Contacto
           </p>
-          <a
+          <WhatsAppLink
             href={waLink}
+            ctaLocation="footer"
             className="nav-link"
             style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 16, fontWeight: 600, color: "#FFFFFF" }}
           >
             <WhatsAppIcon size={18} />
             {waDisplay}
-          </a>
+          </WhatsAppLink>
           <p style={{ margin: "12px 0 0", fontSize: 14, opacity: 0.7, lineHeight: 1.6 }}>
             Lunes a sábado, 9:00 – 20:00
           </p>
@@ -130,6 +133,9 @@ export default function Footer({
                 <a href={hCookies} className="nav-link" style={{ fontSize: 14, color: "#FFFFFF", opacity: 0.78 }}>
                   Política de cookies
                 </a>
+              </li>
+              <li>
+                <CookieSettingsLink style={{ fontSize: 14, color: "#FFFFFF", opacity: 0.78 }} />
               </li>
             </ul>
           </div>
@@ -221,6 +227,15 @@ export default function Footer({
               >
                 Cookies
               </a>
+              <CookieSettingsLink
+                style={{
+                  color: "#FFFFFF",
+                  fontWeight: 500,
+                  textDecoration: "underline",
+                  textDecorationColor: "#FFFFFF59",
+                  textUnderlineOffset: "3px",
+                }}
+              />
             </span>
           </div>
         )}

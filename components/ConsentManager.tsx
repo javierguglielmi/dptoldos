@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import {
   clearAnalyticsCookies,
   pushConsentUpdate,
@@ -10,7 +10,7 @@ import {
   type ConsentChoice,
 } from "@/lib/consent";
 
-const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 type ConsentContextValue = {
   openSettings: () => void;
@@ -52,7 +52,7 @@ export default function ConsentManager({ children }: { children: ReactNode }) {
       {bannerOpen && (
         <CookieBanner onAccept={() => choose("accepted")} onReject={() => choose("rejected")} />
       )}
-      {status === "accepted" && GTM_ID && <GoogleTagManager gtmId={GTM_ID} />}
+      {status === "accepted" && GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </ConsentContext.Provider>
   );
 }
@@ -100,8 +100,8 @@ function CookieBanner({ onAccept, onReject }: { onAccept: () => void; onReject: 
         }}
       >
         <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, opacity: 0.9, maxWidth: "62ch", flex: "1 1 320px" }}>
-          Usamos cookies de análisis y publicidad (Google Analytics, Google Ads y Meta) solo si nos das tu
-          consentimiento. Puedes cambiarlo cuando quieras desde &quot;Configurar cookies&quot; en el pie de
+          Usamos cookies de análisis (Google Analytics) solo si nos das tu consentimiento. Puedes cambiarlo
+          cuando quieras desde &quot;Configurar cookies&quot; en el pie de
           página. Más información en nuestra{" "}
           <a href="/legal/cookies" style={{ color: "#D9A75C", textDecoration: "underline" }}>
             política de cookies

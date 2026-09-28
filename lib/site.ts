@@ -1,7 +1,7 @@
 export const FONT_SERIF = "var(--font-newsreader), Georgia, serif";
 export const FONT_SANS = "var(--font-archivo), system-ui, sans-serif";
 
-export const SITE_URL = "https://dptoldos.vercel.app";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.dptoldos.es";
 export const SITE_NAME = "DP Toldos";
 export const WHATSAPP_NUMBER = "+34 623 81 87 12";
 export const CTA_LABEL = "Pedir presupuesto por WhatsApp";

@@ -91,7 +91,7 @@ export default async function FichaPage({ params }: { params: Promise<{ slug: st
                 {ficha.apertura}
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: 16, alignItems: "center" }}>
-                <CtaButton href={wa} label={CTA_LABEL} />
+                <CtaButton href={wa} label={CTA_LABEL} ctaLocation={`ficha-${ficha.slug}-hero`} />
                 <span style={{ fontSize: 14, lineHeight: 1.5, color: "#FFFFFF", opacity: 0.85, maxWidth: "26ch" }}>
                   Dinos medidas aproximadas y municipio: te damos precio orientativo.
                 </span>
@@ -267,7 +267,7 @@ export default async function FichaPage({ params }: { params: Promise<{ slug: st
               de medición.
             </p>
           </div>
-          <CtaButton href={wa} label={CTA_LABEL} variant="teal" />
+          <CtaButton href={wa} label={CTA_LABEL} ctaLocation={`ficha-${ficha.slug}-cierre`} variant="teal" />
         </div>
       </section>
 

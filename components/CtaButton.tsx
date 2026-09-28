@@ -1,18 +1,22 @@
 import WhatsAppIcon from "./WhatsAppIcon";
+import WhatsAppLink from "./WhatsAppLink";
 
 export default function CtaButton({
   href,
   label,
+  ctaLocation,
   variant = "gold",
 }: {
   href: string;
   label: string;
+  ctaLocation: string;
   variant?: "gold" | "teal";
 }) {
   const isGold = variant === "gold";
   return (
-    <a
+    <WhatsAppLink
       href={href}
+      ctaLocation={ctaLocation}
       className={isGold ? "btn-gold" : "btn-teal"}
       style={{
         display: "inline-flex",
@@ -28,6 +32,6 @@ export default function CtaButton({
     >
       <WhatsAppIcon size={20} />
       {label}
-    </a>
+    </WhatsAppLink>
   );
 }

@@ -228,7 +228,7 @@ function Cookies() {
       <p style={{ margin: "0 0 14px" }}>
         Las cookies son pequeños archivos que un sitio guarda en tu navegador. Usamos algunas para medir visitas y
         para mostrar anuncios más relevantes, pero ninguna se instala hasta que nos das tu consentimiento en el
-        aviso que aparece al entrar. Si no aceptás, esas cookies no se cargan.
+        aviso que aparece al entrar. Si no aceptas, esas cookies no se cargan.
       </p>
       <p style={{ margin: "0 0 32px" }}>
         No usamos cookies para nada distinto de lo que se explica aquí: no vendemos datos de navegación ni los
@@ -237,7 +237,7 @@ function Cookies() {
 
       <h2 style={h2Style}>Cookies que usamos solo con tu consentimiento</h2>
       <p style={{ margin: "0 0 14px" }}>
-        Se activan únicamente si pulsás &quot;Aceptar&quot; en el aviso de cookies:
+        Se activan únicamente si pulsas &quot;Aceptar&quot; en el aviso de cookies:
       </p>
       <ul style={{ margin: "0 0 32px", paddingLeft: 22 }}>
         <li style={{ marginBottom: 14 }}>
@@ -258,14 +258,14 @@ function Cookies() {
       </ul>
       <p style={{ margin: "0 0 32px" }}>
         Estas tres herramientas se cargan a través de Google Tag Manager (Google Ireland Limited), que solo
-        empieza a funcionar después de que aceptás. Google Tag Manager en sí no instala cookies propias: reenvía
+        empieza a funcionar después de que aceptas. Google Tag Manager en sí no instala cookies propias: reenvía
         el consentimiento a las herramientas anteriores.
       </p>
 
       <h2 style={h2Style}>Cómo retirar el consentimiento</h2>
       <p style={{ margin: "0 0 32px" }}>
-        En cualquier momento podés cambiar tu elección desde &quot;Configurar cookies&quot;, en el pie de página de
-        cualquier sección del sitio. Ahí podés volver a aceptar o rechazar; rechazar borra el efecto de las
+        En cualquier momento puedes cambiar tu elección desde &quot;Configurar cookies&quot;, en el pie de página de
+        cualquier sección del sitio. Ahí puedes volver a aceptar o rechazar; rechazar borra el efecto de las
         cookies de análisis y publicidad para las próximas visitas.
       </p>
 

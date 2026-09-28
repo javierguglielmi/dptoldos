@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import {
+  clearAnalyticsCookies,
   pushConsentUpdate,
   readStoredConsent,
   writeStoredConsent,
@@ -40,6 +41,7 @@ export default function ConsentManager({ children }: { children: ReactNode }) {
   function choose(choice: ConsentChoice) {
     writeStoredConsent(choice);
     pushConsentUpdate(choice);
+    if (choice === "rejected") clearAnalyticsCookies();
     setStatus(choice);
     setBannerOpen(false);
   }
@@ -56,13 +58,16 @@ export default function ConsentManager({ children }: { children: ReactNode }) {
 }
 
 function CookieBanner({ onAccept, onReject }: { onAccept: () => void; onReject: () => void }) {
-  const buttonBase: React.CSSProperties = {
+  const buttonStyle: React.CSSProperties = {
     padding: "13px 26px",
     fontSize: 14,
     fontWeight: 700,
     borderRadius: 2,
     cursor: "pointer",
     lineHeight: 1,
+    background: "transparent",
+    color: "#FFFFFF",
+    border: "1px solid #FFFFFF",
   };
 
   return (
@@ -96,7 +101,7 @@ function CookieBanner({ onAccept, onReject }: { onAccept: () => void; onReject: 
       >
         <p style={{ margin: 0, fontSize: 14, lineHeight: 1.6, opacity: 0.9, maxWidth: "62ch", flex: "1 1 320px" }}>
           Usamos cookies de análisis y publicidad (Google Analytics, Google Ads y Meta) solo si nos das tu
-          consentimiento. Podés cambiarlo cuando quieras desde &quot;Configurar cookies&quot; en el pie de
+          consentimiento. Puedes cambiarlo cuando quieras desde &quot;Configurar cookies&quot; en el pie de
           página. Más información en nuestra{" "}
           <a href="/legal/cookies" style={{ color: "#D9A75C", textDecoration: "underline" }}>
             política de cookies
@@ -104,28 +109,10 @@ function CookieBanner({ onAccept, onReject }: { onAccept: () => void; onReject: 
           .
         </p>
         <div style={{ display: "flex", gap: 12, flex: "none" }}>
-          <button
-            type="button"
-            onClick={onReject}
-            style={{
-              ...buttonBase,
-              background: "transparent",
-              color: "#FFFFFF",
-              border: "1px solid #FFFFFF",
-            }}
-          >
+          <button type="button" onClick={onReject} style={buttonStyle}>
             Rechazar
           </button>
-          <button
-            type="button"
-            onClick={onAccept}
-            style={{
-              ...buttonBase,
-              background: "#D9A75C",
-              color: "#22292B",
-              border: "1px solid #D9A75C",
-            }}
-          >
+          <button type="button" onClick={onAccept} style={buttonStyle}>
             Aceptar
           </button>
         </div>

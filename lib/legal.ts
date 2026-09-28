@@ -22,6 +22,6 @@ export const LEGAL_META: Record<LegalSlug, { title: string; description: string 
   cookies: {
     title: "Política de cookies · DP Toldos",
     description:
-      "Qué cookies usa DP Toldos (Google Analytics, Google Ads, Meta) solo con tu consentimiento, y cómo retirarlo cuando quieras.",
+      "Qué cookies usa DP Toldos (Google Analytics) solo con tu consentimiento, y cómo retirarlo cuando quieras.",
   },
 };

@@ -226,9 +226,9 @@ function Cookies() {
     <div>
       <h2 style={h2Style}>Qué son y por qué pedimos tu consentimiento</h2>
       <p style={{ margin: "0 0 14px" }}>
-        Las cookies son pequeños archivos que un sitio guarda en tu navegador. Usamos algunas para medir visitas y
-        para mostrar anuncios más relevantes, pero ninguna se instala hasta que nos das tu consentimiento en el
-        aviso que aparece al entrar. Si no aceptas, esas cookies no se cargan.
+        Las cookies son pequeños archivos que un sitio guarda en tu navegador. Usamos algunas para medir visitas,
+        pero ninguna se instala hasta que nos das tu consentimiento en el aviso que aparece al entrar. Si no
+        aceptas, esas cookies no se cargan.
       </p>
       <p style={{ margin: "0 0 32px" }}>
         No usamos cookies para nada distinto de lo que se explica aquí: no vendemos datos de navegación ni los
@@ -240,33 +240,22 @@ function Cookies() {
         Se activan únicamente si pulsas &quot;Aceptar&quot; en el aviso de cookies:
       </p>
       <ul style={{ margin: "0 0 32px", paddingLeft: 22 }}>
-        <li style={{ marginBottom: 14 }}>
-          <strong>Google Analytics 4 (Google Ireland Limited).</strong> Mide cuántas personas visitan el sitio, qué
-          páginas ven y desde dónde llegan, de forma agregada. Cookies típicas: <code>_ga</code> (hasta 2 años),{" "}
-          <code>_ga_&lt;id&gt;</code> (hasta 2 años).
-        </li>
-        <li style={{ marginBottom: 14 }}>
-          <strong>Google Ads (Google Ireland Limited).</strong> Mide si alguien que vio o hizo clic en un anuncio
-          nuestro terminó contactándonos por WhatsApp, para saber qué anuncios funcionan. Cookie típica:{" "}
-          <code>_gcl_au</code> (hasta 90 días).
-        </li>
         <li>
-          <strong>Meta Pixel (Meta Platforms Ireland Limited).</strong> Mide conversiones de campañas en Facebook e
-          Instagram y permite mostrar anuncios nuestros a quienes ya visitaron el sitio. Cookies típicas:{" "}
-          <code>_fbp</code> (hasta 90 días), <code>fr</code> (hasta 90 días).
+          <strong>Google Analytics 4 (Google Ireland Limited).</strong> Mide cuántas personas visitan el sitio, qué
+          páginas ven, desde dónde llegan y si terminan escribiéndonos por WhatsApp, de forma agregada. Cookies
+          típicas: <code>_ga</code> (hasta 2 años), <code>_ga_&lt;id&gt;</code> (hasta 2 años).
         </li>
       </ul>
       <p style={{ margin: "0 0 32px" }}>
-        Estas tres herramientas se cargan a través de Google Tag Manager (Google Ireland Limited), que solo
-        empieza a funcionar después de que aceptas. Google Tag Manager en sí no instala cookies propias: reenvía
-        el consentimiento a las herramientas anteriores.
+        Google Analytics se carga mediante el Google tag (gtag.js), que solo empieza a funcionar después de que
+        aceptas. Antes de eso no se envía ninguna solicitud a Google Analytics.
       </p>
 
       <h2 style={h2Style}>Cómo retirar el consentimiento</h2>
       <p style={{ margin: "0 0 32px" }}>
         En cualquier momento puedes cambiar tu elección desde &quot;Configurar cookies&quot;, en el pie de página de
         cualquier sección del sitio. Ahí puedes volver a aceptar o rechazar; rechazar borra el efecto de las
-        cookies de análisis y publicidad para las próximas visitas.
+        cookies de análisis para las próximas visitas.
       </p>
 
       <h2 style={h2Style}>Qué ocurre siempre, con o sin consentimiento</h2>
@@ -277,9 +266,10 @@ function Cookies() {
           archivo. No usa cookies.
         </li>
         <li style={{ marginBottom: 10 }}>
-          <strong>Alojamiento y analítica de Vercel.</strong> El sitio está alojado en Vercel, que registra los
-          accesos al servidor (IP, fecha, página solicitada) con fines técnicos y de seguridad, y ofrece una
-          analítica propia sin cookies ni identificadores personales.
+          <strong>Alojamiento y Vercel Web Analytics.</strong> El sitio está alojado en Vercel, que registra los
+          accesos al servidor (IP, fecha, página solicitada) con fines técnicos y de seguridad, y ofrece Vercel Web
+          Analytics, una analítica propia que mide visitas de forma agregada sin cookies ni identificadores
+          personales. Funciona siempre, con o sin tu consentimiento.
         </li>
         <li>
           <strong>Botón de WhatsApp.</strong> Te lleva fuera de este sitio. A partir de ahí se aplican las

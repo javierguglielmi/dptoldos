@@ -165,7 +165,7 @@ export const FICHAS: Record<FichaSlug, Ficha> = {
       },
     ],
     ctaTitulo: "Pide precio para tu brazo directo",
-    metaTitle: "Toldo de brazo directo en el Baix Llobregat · DP Toldos",
+    metaTitle: "Toldo de brazo directo (punto recto) en el Baix Llobregat · DP Toldos",
     metaDescription:
       "Toldo de brazo directo a medida, en variante sin tensión, semi-tensión y con tensión. Motorizable. Instalación propia en el Baix Llobregat y alrededores.",
   },
